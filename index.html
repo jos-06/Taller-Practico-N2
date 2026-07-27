@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechNova</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -33,7 +35,7 @@
             <h2>Productos</h2>
             
             <div>
-                <input type="text" placeholder="Buscar productos...">
+                <input type="text" id="buscador" placeholder="Buscar productos...">
                 <button>Buscar</button>
             </div>
             <br>
@@ -41,109 +43,121 @@
             <div>
                 <h3 id="laptops">Laptops</h3>
                 <br>
-                <div>
-                    <b>Laptop TechNova Pro</b>
-                    <p>Laptop de alto rendimiento para trabajo y estudio.</p>
-                    <span>$799.99</span>
-                    <button>Agregar al Carrito</button>
+                <div class="producto">
+                    <img src="IMG/Laptop TechNova Pro.png" alt="Laptop TechNova Pro" style="width: 100%0;">
+                <b class="nombre">Laptop TechNova Pro</b>
+                <p>Laptop de alto rendimiento para trabajo y estudio.</p>
+                <span class="precio">799.99</span>
+                <button class="agregar">Agregar al Carrito</button>
                 </div>
                 <br>
-                <div>
-                    <b>Laptop Básica Estudiante</b>
+                <div class="producto">
+                    <img src="IMG/Laptop Básica Estudiante.jpg" alt="Laptop Básica Estudiante" style="width: 100%0;">
+                    <b class="nombre">Laptop Básica Estudiante</b>
                     <p>Ideal para ofimática y tareas escolares cotidianas.</p>
-                    <span>$349.99</span>
-                    <button>Agregar al Carrito</button>
+                    <span class="precio">349.99</span>
+                    <button class="agregar">Agregar al Carrito</button>
                 </div>
                 <br>
-                <div>
-                    <b>Laptop Lenovo ThinkPad X1</b>
+                    <div class="producto">
+                    <img src="IMG/Laptop Lenovo ThinkPad X1.jpg" alt="Laptop Lenovo ThinkPad X1" style="width: 100%0;">
+                    <b class="nombre">Laptop Lenovo ThinkPad X1</b>
                     <p>Diseño ligero y elegante con gran autonomía de batería.</p>
-                    <span>$999.99</span>
-                    <button>Agregar al Carrito</button>
+                    <span class="precio">999.99</span>
+                    <button class="agregar">Agregar al Carrito</button>
                 </div>
                 
                 <br><br>
                 <h3 id="smartphones">Smartphones</h3>
                 <br>
-                <div>
-                    <b>Nokia 3310</b>
+                <div class="producto">
+                    <img src="IMG/Nokia 3310.jpg" alt="Nokia 3310" style="width: 100%0;">
+                    <b class="nombre">Nokia 3310</b>
                     <p>Teléfono inteligente con gran capacidad y cámara avanzada.</p>
-                    <span>$399.99</span>
-                    <button>Agregar al Carrito</button>
+                    <span class="precio">399.99</span>
+                    <button class="agregar">Agregar al Carrito</button>
                 </div>
                 <br>
-                <div>
-                    <b>SAMSUNG GALAXY S23</b>
+                <div class="producto">
+                    <img src="IMG/SAMSUNG GALAXY S23.jpg" alt="SAMSUNG GALAXY S23" style="width: 100%0;">
+                    <b class="nombre">SAMSUNG GALAXY S23</b>
                     <p>Un teléfono moderno, compacto y con batería para todo el día.</p>
-                    <span>$699.99</span>
-                    <button>Agregar al Carrito</button>
+                    <span class="precio">699.99</span>
+                    <button class="agregar">Agregar al Carrito</button>
                 </div>
                 <br>
-                <div>
-                    <b>IPHONE 18 PRO MAX</b>
+                <div class="producto">
+                    <img src="IMG/IPHONE 18 PRO MAX.jpg" alt="IPHONE 18 PRO MAX" style="width: 100%0;">
+                    <b class="nombre">IPHONE 18 PRO MAX</b>
                     <p>Una experiencia que pocos pueden tener.</p>
-                    <span>$699.99</span>
-                    <button>Agregar al Carrito</button>
+                    <span class="precio">699.99</span>
+                   <button class="agregar">Agregar al Carrito</button>
                 </div>
 
                 <br><br>
                 <h3 id="gaming">Gaming</h3>
                 <br>
-                <div>
-                    <b>Consola PS5 PRO</b>
+                <div class="producto">
+                    <img src="IMG/Consola PS5 PRO.jpg" alt="Consola PS5 PRO" style="width: 100%0;">
+                    <b class="nombre">Consola PS5 PRO</b>
                     <p>Gráficos en 4K y almacenamiento de 1TB para tus juegos.</p>
-                    <span>$699.99</span>
-                    <button>Agregar al Carrito</button>
+                    <span class="precio">699.99</span>
+                    <button class="agregar">Agregar al Carrito</button>
                 </div>
                 <br>
-                <div>
-                    <b>Teclado Mecánico RGB</b>
+                <div class="producto">
+                    <img src="IMG/Teclado Mecánico RGB.jpg" alt="Teclado Mecánico RGB" style="width: 100%0;">
+                    <b class="nombre">Teclado Mecánico RGB</b>
                     <p>Teclado para juegos con switches azules y luces personalizables.</p>
-                    <span>$59.99</span>
-                    <button>Agregar al Carrito</button>
+                    <span class="precio">59.99</span>
+                    <button class="agregar">Agregar al Carrito</button>
                 </div>
                 <br>
-                <div>
-                    <b>Mouse Gamer Inalámbrico Logitech</b>
+                <div class="producto">
+                    <img src="IMG/Mouse Gamer Inalámbrico Logitech.jpg" alt="Mouse Gamer Inalámbrico Logitech" style="width: 100%0;">
+                    <b class="nombre">Mouse Gamer Inalámbrico Logitech</b>
                     <p>Alta precisión, baja latencia y botones programables.</p>
-                    <span>$45.99</span>
-                    <button>Agregar al Carrito</button>
+                    <span class="precio">45.99</span>
+                    <button class="agregar">Agregar al Carrito</button>
                 </div>
 
                 <br><br>
                 <h3 id="camaras">Cámaras</h3>
                 <br>
-                <div>
-                    <b>Cámara Digital Pro</b>
+                <div class="producto">
+                    <img src="IMG/Cámara Digital Pro.jpg" alt="Cámara Digital Pro" style="width: 100%0;">
+                    <b class="nombre">Cámara Digital Pro</b>
                     <p>Ideal para fotografías profesionales.</p>
-                    <span>$549.99</span>
-                    <button>Agregar al Carrito</button>
+                    <span class="precio">549.99</span>
+                    <button class="agregar">Agregar al Carrito</button>
                 </div>
                 <br>
-                <div>
+                <div class="producto">
+                    <img src="IMG/Cámara de Acción 4K FULL HD.jpg" alt="Cámara de Acción 4K FULL HD" style="width: 100%0;">
                     <b>Cámara de Acción 4K FULL HD</b>
+                    <b class="nombre">Cámara de Acción 4K FULL HD</b>
                     <p>Resistente al agua, golpes y perfecta para deportes.</p>
-                    <span>$129.99</span>
-                    <button>Agregar al Carrito</button>
+                    <span class="precio">129.99</span>
+                    <button class="agregar">Agregar al Carrito</button>
                 </div>
                 <br>
-                <div>
-                    <b>Cámara de Seguridad 3mil</b>
+                <div class="producto">
+                    <img src="IMG/Cámara de Seguridad 3mil.jpg" alt=">Cámara de Seguridad 3mil" style="width: 100%0;">
+                    <b class="nombre">Cámara de Seguridad 3mil</b>
                     <p>Visión nocturna y detección de movimiento en tiempo real.</p>
-                    <span>$39.99</span>
-                    <button>Agregar al Carrito</button>
+                    <span class="precio">39.99</span>
+                    <button class="agregar">Agregar al Carrito</button>
                 </div>
             </div>
         </section>
 
         <aside>
-            <h2>Carrito de Compras</h2>
-            <ul>
-                
-            </ul>
-            <p>Total: <span>$0.00</span></p>
-            <button>Finalizar Compra</button>
-        </aside>
+        <h2>Carrito de Compras</h2>
+
+        <ul id="listaCarrito"></ul>
+
+        <p>Total: <span id="total">$0.00</span></p>
+    </aside>
     </main>
 
     <footer>
@@ -157,6 +171,6 @@
             <button>Enviar Mensaje</button>
         </section>
     </footer>
-
+<script src="javascript.js"></script>
 </body>
 </html>
