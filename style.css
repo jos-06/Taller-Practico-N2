@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+aside {
+    flex: 1; 
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+#productos {
+    flex: 3; 
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+#productos > div:not(:first-child) { 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+
+#productos > div:not(:first-child):hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #219150;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+#productos img {
+    width: 100%;
+    max-width: 250px; 
+    height: auto;     
+    display: block;
+    margin: 0 auto;   
+}
